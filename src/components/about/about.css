@@ -1,0 +1,76 @@
+.about-us {
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+}
+
+.pic {
+    height: auto;
+    width: 302px;
+}
+
+.about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    width: 540px;
+}
+
+.text h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.text h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+span {
+    color: #4070f4;
+}
+
+.text p {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.data {
+    margin-top: 30px;
+}
+
+button {
+    padding: 8px 20px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #2a2a2a;
+    margin-right: 1rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+ .btn-2 {
+    padding: 8px 30px;
+    background: #2a2a2a;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all 200ms ease-in-out;
+  }
+
+.hire:hover {
+    background: #000;
+    border: 1px solid #4070f4;
+}

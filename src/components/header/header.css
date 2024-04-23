@@ -1,0 +1,154 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 70px;
+  }
+  
+  .main .men {
+    width: 100%;
+    max-width: 400px;
+    transition: all 200ms ease;
+    cursor: pointer;
+  }
+  
+  .main-detil {
+    text-align: center;
+    color: #2a2a2a;
+  }
+  
+  .main-detil h1 {
+    font-size: 40px;
+  }
+  
+  .main-detil h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .main .btn button {
+    padding: 8px 20px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #2a2a2a;
+    margin-right: 1rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .main .btn .btn-2 {
+    padding: 8px 30px;
+    background: #2a2a2a;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .social i {
+    color: #2a2a2a;
+    font-size: 30px;
+    margin: 0px 14px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+  }
+    
+  
+  .sub-btn a {
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+
+  .hero {
+    /* Prevent horizontal overflow */
+     overflow-y: hidden;
+    
+  }
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .main {
+      flex-direction: row;
+    }
+  
+    .main .men {
+      width: 400px;
+    }
+  
+    .main-detil h1 {
+      font-size: 50px;
+    }
+  
+    .main-detil h4 {
+      font-size: 30px;
+    }
+  
+    .social i {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .wave {
+      display: block;
+    }
+  }
+
